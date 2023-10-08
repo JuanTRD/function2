@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT7</title>
+</head>
+<body>
+Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, <br>
+thực hiện đổi chỗ hai số nguyên đó. <br>
+<script>
+    function swap(a, b) {
+        document.write('before ' + a + ' ' + b + ' ');
+        let temp = a;
+        a =b;
+        b = temp;
+        document.write('after ' + a + " " + b + '<br>');
+    }
+    let a = 3;
+    let b = 5;
+    swap(a,b);
+    swap(5,6);
+</script>
+</body>
+</html>

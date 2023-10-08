@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bt8</title>
+</head>
+<body>
+Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, <br>
+sau đó đảo ngược mảng số nguyên đó. <br>
+
+<p id="result"></p>
+<script>
+    function reverseArray() {
+        let a = [2,5,8,6,8,4,2];
+        let first = 0;
+        let last = a.length-1;
+        while (first<last) {
+            let temp = a[first];
+            a[first] = a[last];
+            a[last] = temp;
+            first++;
+            last--;
+        }
+        return a;
+    }
+    alert(reverseArray())
+
+</script>
+</body>
+</html>

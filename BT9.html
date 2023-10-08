@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT9</title>
+</head>
+<body>
+Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, <br>
+kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. <br>
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. <br>
+<script>
+    function check(a) {
+        let b = ['a','hihi','hehe', 'hoho', 'co2', 'na2co3','a','hihi','hihi'];
+        let count = -1;
+        for (let i=0; i<b.length; i++) {
+            if (a === b[i]) {
+                count++;
+            }
+        }
+        if (count === -1) {
+            return -1;
+        } else {
+            return count+1;
+        }
+    }
+    alert(check('hihi'));
+    alert(check('c'));
+</script>
+</body>
+</html>

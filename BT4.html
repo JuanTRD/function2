@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. <br>
+Nếu là ký tự số hàm trả về true, ngược lại trả về false. <br>
+<input type="text" id="input"
+        oninput="isNumber(this.value)"
+        onchange="isNumber(this.value)">
+<p id="result"></p>
+<script>
+    function isNumber(x) {
+        if ((isNaN(x/1))==true) {
+            document.getElementById("result").innerHTML = "false";
+        } else {
+
+            document.getElementById("result").innerHTML = "true";
+        }
+    }
+
+</script>
+</body>
+</html>

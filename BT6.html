@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT6</title>
+</head>
+<body>
+Bài 6: Viết hàm nhận vào một số, <br>
+kiểm tra xem nếu số đưa vào có phải là nguyên dương không. <br>
+Nếu là nguyên dương trả về true, ngược lại trả về false. <br>
+<label><input type="text" id="input"
+        oninput="positiveNumber(this.value)"
+        onchange="positiveNumber(this.value)">
+</label>
+<p id="result"></p>
+<script>
+    function positiveNumber(x) {
+        if (isNaN(x)===true) {
+            document.getElementById("result").innerHTML = "Not a Number";
+        } else {
+            if (x < 0) {
+                document.getElementById("result").innerHTML = "false";
+            } else {
+                document.getElementById("result").innerHTML = "true";
+            }
+        }
+    }
+</script>
+</body>
+</html>
